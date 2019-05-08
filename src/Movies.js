@@ -75,6 +75,7 @@ class Movies extends React.Component {
           title: movie.title,
           overview: movie.overview,
           posterPath: movie.poster_path,
+          genres: movie.genre_ids,
         }
       );
     })
@@ -82,6 +83,7 @@ class Movies extends React.Component {
     this.setState({
       moviesList,
     });
+    console.log(moviesList);
   }
 
   renderMovies = () => {
